@@ -2,7 +2,8 @@ FROM php:apache-stretch
 
 MAINTAINER thenx<opensource@thenx.org>
 
-# ADD sources.list /etc/apt/
+# Uncommented by Lee Wen 2020-12-22
+ADD sources.list /etc/apt/
 
 RUN apt-get update && apt-get install -y \
         unzip \
